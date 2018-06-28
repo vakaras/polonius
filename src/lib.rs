@@ -17,9 +17,9 @@ extern crate clap;
 
 mod dump;
 mod facts;
-mod intern;
+pub mod intern;
 mod program;
-mod tab_delim;
+pub mod tab_delim;
 mod test;
 
 pub mod cli;

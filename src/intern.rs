@@ -35,14 +35,14 @@ where
     }
 }
 
-crate struct InternerTables {
+pub struct InternerTables {
     crate regions: Interner<Region>,
     crate loans: Interner<Loan>,
     crate points: Interner<Point>,
 }
 
 impl InternerTables {
-    crate fn new() -> Self {
+    pub fn new() -> Self {
         Self {
             regions: Interner::new(),
             loans: Interner::new(),

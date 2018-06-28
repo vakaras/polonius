@@ -1,11 +1,11 @@
 use polonius_engine;
 
-crate type AllFacts = polonius_engine::AllFacts<Region, Loan, Point>;
+pub type AllFacts = polonius_engine::AllFacts<Region, Loan, Point>;
 
 macro_rules! index_type {
     ($t:ident) => {
         #[derive(Ord, PartialOrd, Eq, PartialEq, Clone, Copy, Debug, Hash)]
-        pub(crate) struct $t {
+        pub struct $t {
             index: u32,
         }
 
